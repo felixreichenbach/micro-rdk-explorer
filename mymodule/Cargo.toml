@@ -1,0 +1,13 @@
+[package]
+name = "mymodule"
+version = "0.1.8"
+edition = "2021"
+authors = ["Felix Reichenbach <38431269+felixreichenbach@users.noreply.github.com>"]
+resolver = "2"
+rust-version = "1.75"
+
+[dependencies]
+micro-rdk = {git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"], version = "0.1.8", rev = "c669b06"}
+
+[package.metadata.com.viam]
+module = true
